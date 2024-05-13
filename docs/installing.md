@@ -23,7 +23,7 @@ Read and then accept the license agreement and then click next.
 :align: center
 :class: shadow-image
 :width: 70%
-Choose the location where you want the installer to put Halcyon and it's associated files and then click next.
+Choose the location where you want the installer to put Halcyon and its associated files and then click next.
 :::
 
 :::{figure} images/install4.png
@@ -61,7 +61,7 @@ Very likely, when you start Halcyon by double-clicking the Halcyon program icon,
 When you launch Halcyon, it will show this windows where it will put, hopefully, informative messages.
 :::
 When the Halcyon log screen looks like the above, you should be able to open your web browser and navigate to the following address:
-http:localhost:8888
+http://localhost:8888
 
 You should see the login screen.
 
@@ -69,8 +69,9 @@ You should see the login screen.
 
 [Download MacOSX DMG file](https://github.com/halcyon-project/Halcyon/releases/download/halcyon-1.0.0/Halcyon-1.0.0.dmg)
 
-The mac dmg file contains the Halcyon application.  Copy this file to where you want Halcyon to create it's associated files.  From a terminal window, switch to the folder yo created and put Halcyon (the file contained within dmg file.
-```
+The Mac dmg file contains the Halcyon application.  Copy this file to where you want Halcyon to create its associated files.  From a terminal window, switch to the folder yo created and put Halcyon (the file contained within dmg file.
+
+```sh
 cd Halcyon (the folder you put Halcyon into)
 Halcyon.app/Contents/MacOS/Halcyon
 ```
@@ -83,20 +84,21 @@ At this point, you will see Halcyon start up messages be displayed.  Once it is 
 
 You can install this debian package on Ubuntu or Debian Linux using the following command
 
-```
+```sh
 sudo apt install ./{deb package name}
 ```
 
 ### Redhat
 You can install this RPM package with the following command
 [Download RedHat rpm package](https://github.com/halcyon-project/Halcyon/releases/download/halcyon-1.0.0/halcyon-1.0.0-1.x86_64.rpm)
-```
+
+```sh
 sudo rpm -i ./{rpm package name}
 ```
 
 Once you have either the DEB or RPM package installed depending on your operating system, create a folder where you want Halcyon's data files to be.  Once you switch into this folder, just type 'Halcyon'
 
-```
+```sh
 mkdir halcyon
 cd halcyon
 Halcyon
@@ -109,9 +111,9 @@ Halcyon will start to load up and create any files it needs.  You will be able t
 
 Running the java jar version will require a working JDK21 installation, either [OpenJDK](https://openjdk.org/) or [GraalVM](https://www.graalvm.org/)
 
-Put your jar file in the folder where you want Halcyon to create it's data files.  Then switch into that folder and execute the jar.
+Put your jar file in the folder where you want Halcyon to create its data files.  Then switch into that folder and execute the jar.
 
-```
+```sh
 mkdir halcyon
 mv {downloaded jar file} halcyon
 cd halcyon
