@@ -44,10 +44,11 @@ cd Halcyon/ingest
 mvn -Pingestjar clean package 
 ```
 
-## SSL
+## SSL Key Generation
 ```sh
 openssl req -new -newkey rsa:2048 -nodes -keyout beak.key -out beak.csr
-openssl pkcs12 -export -in beak.crt -inkey beak.key -name Halcyon -out beak.p12
-keytool -importkeystore -deststorepass changeit -destkeystore cacerts -srckeystore beak.p12 -srcstoretype PKCS12
+openssl pkcs12 -export -in beak.crt -inkey beak.key -out beak2024.p12 -name halcyon
+keytool -importkeystore -destkeystore halcyonkeystore.jks -srckeystore beak2024.p12 -srcstoretype PKCS12 -alias halcyon
+cp cacerts halcyontruststore.jks
 ```
 
