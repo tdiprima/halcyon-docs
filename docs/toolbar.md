@@ -98,7 +98,7 @@ Displays a list of all annotation sets, allowing you to update labels and toggle
 ![List Annotation Sets](images/toolbar15.png)
 
 ## Lock Rotation
-Locks the rotation of the image, preventing it from swiveling while zooming.
+Locks the rotation of the image, preventing it from rotating while zooming.
 
 ![Lock Rotation](images/toolbar16.png)
 
