@@ -11,9 +11,9 @@ The documentation is currently a work in progress.  Stay tuned for more updates.
 :hidden: true
 
 docs/installing
+docs/toolbar
 docs/annotations
 docs/building
 docs/authorization
 docs/about
 ```
-
