@@ -1,4 +1,4 @@
-# Image Annotation Tool Documentation
+# Image Annotation Toolbar
 
 ## Table of Contents
 - [Color/Cancer-Type Dropdown](#color-cancer-type-dropdown)
