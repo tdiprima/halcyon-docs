@@ -1,9 +1,10 @@
 ## Annotations
 
-Halcyon uses [Open Geospatial Consortium (OSC) GeoSPARQL](http://www.geosparql.org/) for its annotations.  Given its RDF basis, it's possible to use [Turtle](https://www.w3.org/TR/turtle/), [RDF-XML](https://www.w3.org/TR/rdf-syntax-grammar/), or [JSON-LD](https://www.w3.org/TR/json-ld11/) for your format.  The latest developments for GeoSPARQL can be seen at their [GitHub repository](https://github.com/opengeospatial/ogc-geosparql).
+Halcyon uses [Open Geospatial Consortium (OGC) GeoSPARQL](http://www.geosparql.org/) for its annotations.  Given its RDF basis, it's possible to use [Turtle](https://www.w3.org/TR/turtle/), [RDF-XML](https://www.w3.org/TR/rdf-syntax-grammar/), or [JSON-LD](https://www.w3.org/TR/json-ld11/) for your format.  The latest developments for GeoSPARQL can be seen at their [GitHub repository](https://github.com/opengeospatial/ogc-geosparql).
 
 Here is an example of GeoSPARQL in Turtle:
-```
+
+```turtle
 @prefix dc:   <http://purl.org/dc/terms/> .
 @prefix exif: <http://www.w3.org/2003/12/exif/ns#> .
 @prefix geo:  <http://www.opengis.net/ont/geosparql#> .
@@ -62,7 +63,9 @@ Here is an example of GeoSPARQL in Turtle:
                        ]
 ] .
 ```
-Let's break this down a bit.  First is the top defintion of the GeoSparql Feature Collection.
+
+Let's break this down a bit.  First is the top definition of the GeoSparql Feature Collection.
+
 ```
 [ a                    geo:FeatureCollection;
 
@@ -77,9 +80,11 @@ Let's break this down a bit.  First is the top defintion of the GeoSparql Featur
                          prov:wasAssociatedWith  <https://github.com/SBU-BMI/quip_cnn_segmentation/releases/tag/v1.1>
                        ]; 
 ```
-The feature collection basic metadata is in [Dublin Core](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/) and the [PROV Ontology](https://www.w3.org/TR/prov-o/).  The piece critical for this GeoSPARQL file to work with Halcyon is the prov:wasGeneratedBy which defines the process by which the data was created and the source image to which that process acted upon.  Halcyon uses the MD5 hash of the image to make it easy for the system to link images to associated Feature Collections.
 
-Expressed as JSON-LD
+The feature collection basic metadata is in [Dublin Core](https://www.dublincore.org/specifications/dublin-core/dcmi-terms/) and the [PROV Ontology](https://www.w3.org/TR/prov-o/).  The piece critical for this GeoSPARQL file to work with Halcyon is the `prov:wasGeneratedBy` which defines the process by which the data was created and the source image to which that process acted upon.  Halcyon uses the MD5 hash of the image to make it easy for the system to link images to associated Feature Collections.
+
+Expressed as JSON-LD:
+
 ```
 {
     "@context": "https://halcyon.is/context.json",
