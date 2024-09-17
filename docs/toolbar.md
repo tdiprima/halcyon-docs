@@ -21,6 +21,7 @@
 - [Zoom Dropdown](#zoom-dropdown)
 - [Brightness and Contrast Sliders](#brightness-and-contrast-sliders)
 - [Reset Brightness and Contrast Button](#reset-brightness-and-contrast-button)
+- [Image Navigation](#image-navigation)
 
 ## Color/Cancer Type Dropdown
 Allows you to select the color / cancer-type for your brush. Choose the desired color from the dropdown before drawing or editing annotations.
@@ -28,22 +29,22 @@ Allows you to select the color / cancer-type for your brush. Choose the desired 
 ![Color/Cancer Type Dropdown](images/toolbar1.png)
 
 ## Free-Drawing Brush
-A flexible brush for free-hand drawing. Simply click and hold the mouse button to start drawing, then release to finish.
+A flexible brush for free-hand drawing. Simply click and hold the mouse button to start drawing, then release to finish.  For touch screens, touch and draw then lift the pen.
 
 ![Free-Drawing Brush](images/toolbar2.png)
 
 ## Rectangle Brush
-Creates a rectangle by clicking and dragging. Release the mouse button to complete the rectangle.
+Creates a rectangle by clicking and dragging. Release the mouse button (or lift your drawing pen) to complete the rectangle.
 
 ![Rectangle Brush](images/toolbar3.png)
 
 ## Ellipse Brush
-Draws an ellipse by clicking and dragging. Adjust the size and shape of the ellipse by dragging before releasing the mouse button.
+Draws an ellipse by clicking and dragging. Adjust the size and shape of the ellipse by dragging before releasing the mouse button or lifting the drawing pen.
 
 ![Ellipse Brush](images/toolbar4.png)
 
 ## Polygon Brush
-Click to create points and define the shape of the polygon. Double-click to complete the polygon.
+Click to create points and define the shape of the polygon. Double-click (or double-tap) to complete the polygon.
 
 ![Polygon Brush](images/toolbar5.png)
 
@@ -53,27 +54,27 @@ Draws a hollow shape. Use the size slider to adjust the thickness of the hollow 
 ![Hollow Brush + Size Slider](images/toolbar6.png)
 
 ## Grid Tool
-Draws a grid on the screen, allowing you to color individual squares to indicate specific cancer types.
+Draws a grid on the screen, allowing you to color individual squares to indicate specific cancer types.  Tap or click to fill in a square.  Shift-click to remove color or double-tap to go into "removal" mode.
 
 ![Grid Tool](images/toolbar7.png)
 
 ## Edit Polygon
-Provides edit handles on polygons, allowing you to reshape or delete them.
+Provides edit handles on polygons, allowing you to reshape or delete them.  Click inside the polygon to select it for editing.
 
 ![Edit Polygon](images/toolbar8.png)
 
 ## Edit Label
-View or edit the label associated with an annotation. Useful for updating cancer types or other metadata.
+View or edit the label associated with an annotation. Useful for updating cancer types or other metadata.  Click inside the polygon to select it.
 
 ![Edit Label](images/toolbar9.png)
 
 ## Get Area and Circumference
-Calculates and displays the area and circumference of selected shapes or polygons.
+Calculates and displays the area and circumference of selected shapes or polygons.  Click inside the polygon to select it.
 
 ![Get Area and Circumference](images/toolbar10.png)
 
 ## Ruler
-Measures distances in pixels on the image. Click to start measuring and drag to the endpoint to see the pixel distance.
+Measures distances in pixels on the image. Click (or touch) to start measuring and drag to the endpoint to see the pixel distance.
 
 ![Ruler](images/toolbar11.png)
 
@@ -121,5 +122,9 @@ Adjust the brightness and contrast of the image to enhance visibility of details
 Resets the brightness and contrast settings to their default values.
 
 ![Reset Brightness and Contrast Button](images/toolbar20.png)
+
+## Image Navigation
+
+MOVE mouse &amp; press LEFT: rotate, SCROLL: zoom, RIGHT: pan
 
 <br>
